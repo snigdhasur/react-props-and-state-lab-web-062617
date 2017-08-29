@@ -11,7 +11,7 @@ class PetBrowser extends React.Component {
   	// allPets is array of pet objects
 
   	const renderedPets = 
-	  	allPets.map(pet => <Pet onAdoptPet={this.props.onAdoptPet} isAdopted={adoptedPets.includes(pet.id)} pet={pet} adoptedPets={this.props.adoptedPets}/>)
+	  	allPets.map((pet, index) => <Pet key={index} onAdoptPet={this.props.onAdoptPet} isAdopted={adoptedPets.includes(pet.id)} pet={pet} adoptedPets={this.props.adoptedPets}/>)
 
     return (
       <div className="ui cards">

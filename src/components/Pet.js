@@ -39,7 +39,7 @@ Pet.defaultProps = {
   pet: {
     id: "",
     name: "Pet prop name",
-    type: "animal",
+    type: "",
     age: 6,
     weight: 5,
     gender: "female"
